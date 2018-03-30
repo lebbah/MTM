@@ -1,0 +1,16 @@
+sbt compile
+bintrayChangeCredentials
+sbt compile
+publishTo
+bintrayWhoami
+sbt compile
+quit
+q
+compile
+reload
+compile
+reload
+compile
+publish
+push
+publish 

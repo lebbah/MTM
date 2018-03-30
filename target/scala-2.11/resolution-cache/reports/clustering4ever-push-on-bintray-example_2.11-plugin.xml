@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="clustering4ever"
+		module="push-on-bintray-example_2.11"
+		revision="0.1"
+		conf="plugin"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20180330140232"/>
+	<dependencies>
+	</dependencies>
+</ivy-report>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="mtm-build"
+		revision="0.1-SNAPSHOT"
+		extra-scalaVersion="2.10"
+		extra-sbtVersion="0.13"
+		conf="runtime-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20180329214555"/>
+	<dependencies>
+		<module organisation="org.foundweekends" name="sbt-bintray">
+			<revision name="0.5.3" status="release" pubdate="20180202182431" resolver="sbt-plugin-releases" artresolver="sbt-plugin-releases" homepage="https://github.com/sbt/sbt-bintray/#readme" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="true" searched="true" default="false" conf="compile, default(compile)" position="4">
+				<license name="MIT" url="https://github.com/sbt/sbt-bintray/blob/0.5.3/LICENSE"/>
+				<metadata-artifact status="successful" details="" size="1794" time="3163" location="/Users/lebbah/.ivy2/cache/scala_2.10/sbt_0.13/org.foundweekends/sbt-bintray/ivy-0.5.3.xml" searched="true" original-local-location="/Users/lebbah/.ivy2/cache/scala_2.10/sbt_0.13/org.foundweekends/sbt-bintray/ivy-0.5.3.xml.original" origin-is-local="false" origin-location="http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.foundweekends/sbt-bintray/scala_2.10/sbt_0.13/0.5.3/ivys/ivy.xml"/>
+				<caller organisation="default" name="mtm-build" conf="compile, runtime-internal, runtime, optional" rev="0.5.3" rev-constraint-default="0.5.3" rev-constraint-dynamic="0.5.3" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbt-bintray" type="jar" ext="jar" status="successful" details="" size="223246" time="8799" location="/Users/lebbah/.ivy2/cache/scala_2.10/sbt_0.13/org.foundweekends/sbt-bintray/jars/sbt-bintray-0.5.3.jar">
+						<origin-location is-local="false" location="http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.foundweekends/sbt-bintray/scala_2.10/sbt_0.13/0.5.3/jars/sbt-bintray.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-nop">
+			<revision name="1.7.7" status="release" pubdate="20140404131304" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="18">
+				<metadata-artifact status="no" details="" size="4602" time="0" location="/Users/lebbah/.ivy2/cache/org.slf4j/slf4j-nop/ivy-1.7.7.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/slf4j/slf4j-nop/1.7.7/slf4j-nop-1.7.7.pom"/>
+				<caller organisation="org.foundweekends" name="sbt-bintray" conf="compile" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="0.5.3"/>
+				<artifacts>
+					<artifact name="slf4j-nop" type="jar" ext="jar" status="no" details="" size="4090" time="0" location="/Users/lebbah/.ivy2/cache/org.slf4j/slf4j-nop/jars/slf4j-nop-1.7.7.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/slf4j/slf4j-nop/1.7.7/slf4j-nop-1.7.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.7" status="release" pubdate="20140404131248" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="19">
+				<metadata-artifact status="no" details="" size="4573" time="0" location="/Users/lebbah/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.pom"/>
+				<caller organisation="com.ning" name="async-http-client" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.8.10"/>
+				<caller organisation="org.slf4j" name="slf4j-nop" conf="default, compile, runtime, master" rev="1.7.7" rev-constraint-default="1.7.7" rev-constraint-dynamic="1.7.7" callerrev="1.7.7"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="29257" time="0" location="/Users/lebbah/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.7.5" status="release" pubdate="20130325215215" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<metadata-artifact status="no" details="" size="4469" time="0" location="/Users/lebbah/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.5.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.pom"/>
+				<evicted-by rev="1.7.7"/>
+				<caller organisation="com.ning" name="async-http-client" conf="compile, runtime" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.8.10"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.foundweekends" name="bintry_2.10">
+			<revision name="0.5.1" status="release" pubdate="20170718145212" resolver="public" artresolver="public" homepage="https://github.com/sbt/bintry/#readme" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="5">
+				<license name="MIT" url="https://github.com/sbt/bintry/blob/0.5.1/LICENSE"/>
+				<metadata-artifact status="successful" details="" size="1925" time="320" location="/Users/lebbah/.ivy2/cache/org.foundweekends/bintry_2.10/ivy-0.5.1.xml" searched="true" original-local-location="/Users/lebbah/.ivy2/cache/org.foundweekends/bintry_2.10/ivy-0.5.1.xml.original" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/foundweekends/bintry_2.10/0.5.1/bintry_2.10-0.5.1.pom"/>
+				<caller organisation="org.foundweekends" name="sbt-bintray" conf="compile" rev="0.5.1" rev-constraint-default="0.5.1" rev-constraint-dynamic="0.5.1" callerrev="0.5.3"/>
+				<artifacts>
+					<artifact name="bintry_2.10" type="jar" ext="jar" status="successful" details="" size="491408" time="2462" location="/Users/lebbah/.ivy2/cache/org.foundweekends/bintry_2.10/jars/bintry_2.10-0.5.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/foundweekends/bintry_2.10/0.5.1/bintry_2.10-0.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.databinder.dispatch" name="dispatch-json4s-native_2.10">
+			<revision name="0.11.2" status="release" pubdate="20140811004413" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://dispatch.databinder.net/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="7">
+				<license name="LGPL v3" url="http://www.gnu.org/licenses/lgpl.txt"/>
+				<metadata-artifact status="no" details="" size="3259" time="0" location="/Users/lebbah/.ivy2/cache/net.databinder.dispatch/dispatch-json4s-native_2.10/ivy-0.11.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/net/databinder/dispatch/dispatch-json4s-native_2.10/0.11.2/dispatch-json4s-native_2.10-0.11.2.pom"/>
+				<caller organisation="org.foundweekends" name="bintry_2.10" conf="default, compile, runtime, master" rev="0.11.2" rev-constraint-default="0.11.2" rev-constraint-dynamic="0.11.2" callerrev="0.5.1"/>
+				<artifacts>
+					<artifact name="dispatch-json4s-native_2.10" type="jar" ext="jar" status="no" details="" size="8185" time="0" location="/Users/lebbah/.ivy2/cache/net.databinder.dispatch/dispatch-json4s-native_2.10/jars/dispatch-json4s-native_2.10-0.11.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/net/databinder/dispatch/dispatch-json4s-native_2.10/0.11.2/dispatch-json4s-native_2.10-0.11.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-native_2.10">
+			<revision name="3.2.10" status="release" pubdate="20140513191841" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="17">
+				<license name="ASL" url="http://github.com/json4s/json4s/raw/HEAD/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2665" time="0" location="/Users/lebbah/.ivy2/cache/org.json4s/json4s-native_2.10/ivy-3.2.10.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/json4s/json4s-native_2.10/3.2.10/json4s-native_2.10-3.2.10.pom"/>
+				<caller organisation="net.databinder.dispatch" name="dispatch-json4s-native_2.10" conf="compile, runtime" rev="3.2.10" rev-constraint-default="3.2.10" rev-constraint-dynamic="3.2.10" callerrev="0.11.2"/>
+				<artifacts>
+					<artifact name="json4s-native_2.10" type="jar" ext="jar" status="no" details="" size="68747" time="0" location="/Users/lebbah/.ivy2/cache/org.json4s/json4s-native_2.10/jars/json4s-native_2.10-3.2.10.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/json4s/json4s-native_2.10/3.2.10/json4s-native_2.10-3.2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-core_2.10">
+			<revision name="3.2.10" status="release" pubdate="20140513191913" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="11">
+				<license name="ASL" url="http://github.com/json4s/json4s/raw/HEAD/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2938" time="0" location="/Users/lebbah/.ivy2/cache/org.json4s/json4s-core_2.10/ivy-3.2.10.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.10/json4s-core_2.10-3.2.10.pom"/>
+				<caller organisation="org.json4s" name="json4s-native_2.10" conf="compile, runtime" rev="3.2.10" rev-constraint-default="3.2.10" rev-constraint-dynamic="3.2.10" callerrev="3.2.10"/>
+				<caller organisation="net.databinder.dispatch" name="dispatch-json4s-native_2.10" conf="compile, runtime" rev="3.2.10" rev-constraint-default="3.2.10" rev-constraint-dynamic="3.2.10" callerrev="0.11.2"/>
+				<artifacts>
+					<artifact name="json4s-core_2.10" type="jar" ext="jar" status="no" details="" size="584691" time="0" location="/Users/lebbah/.ivy2/cache/org.json4s/json4s-core_2.10/jars/json4s-core_2.10-3.2.10.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/json4s/json4s-core_2.10/3.2.10/json4s-core_2.10-3.2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scalap">
+			<revision name="2.10.0" status="release" pubdate="20121220083017" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="14">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2524" time="0" location="/Users/lebbah/.ivy2/cache/org.scala-lang/scalap/ivy-2.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.0/scalap-2.10.0.pom"/>
+				<caller organisation="org.json4s" name="json4s-core_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="3.2.10"/>
+				<artifacts>
+					<artifact name="scalap" type="jar" ext="jar" status="no" details="" size="855012" time="0" location="/Users/lebbah/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.10.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scalap/2.10.0/scalap-2.10.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-compiler">
+			<revision name="2.10.0" status="release" pubdate="20121220082948" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2827" time="0" location="/Users/lebbah/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.10.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.0/scala-compiler-2.10.0.pom"/>
+				<caller organisation="org.scala-lang" name="scalap" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="2.10.0"/>
+				<artifacts>
+					<artifact name="scala-compiler" type="jar" ext="jar" status="no" details="" size="14149435" time="0" location="/Users/lebbah/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.10.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.10.0/scala-compiler-2.10.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.10.0" status="release" pubdate="20121220082932" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
+				<metadata-artifact status="no" details="" size="2552" time="0" location="/Users/lebbah/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.pom"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="2.10.0"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3149351" time="0" location="/Users/lebbah/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.10.0/scala-reflect-2.10.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.paranamer" name="paranamer">
+			<revision name="2.6" status="release" pubdate="20131009055654" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="13">
+				<metadata-artifact status="no" details="" size="4192" time="0" location="/Users/lebbah/.ivy2/cache/com.thoughtworks.paranamer/paranamer/ivy-2.6.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.pom"/>
+				<caller organisation="org.json4s" name="json4s-core_2.10" conf="compile, runtime" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="3.2.10"/>
+				<artifacts>
+					<artifact name="paranamer" type="jar" ext="jar" status="no" details="" size="32806" time="0" location="/Users/lebbah/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.6.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-ast_2.10">
+			<revision name="3.2.10" status="release" pubdate="20140513191837" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="12">
+				<license name="ASL" url="http://github.com/json4s/json4s/raw/HEAD/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2516" time="0" location="/Users/lebbah/.ivy2/cache/org.json4s/json4s-ast_2.10/ivy-3.2.10.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.10/json4s-ast_2.10-3.2.10.pom"/>
+				<caller organisation="org.json4s" name="json4s-core_2.10" conf="compile, runtime" rev="3.2.10" rev-constraint-default="3.2.10" rev-constraint-dynamic="3.2.10" callerrev="3.2.10"/>
+				<artifacts>
+					<artifact name="json4s-ast_2.10" type="jar" ext="jar" status="no" details="" size="83798" time="0" location="/Users/lebbah/.ivy2/cache/org.json4s/json4s-ast_2.10/jars/json4s-ast_2.10-3.2.10.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/json4s/json4s-ast_2.10/3.2.10/json4s-ast_2.10-3.2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.databinder.dispatch" name="dispatch-core_2.10">
+			<revision name="0.11.2" status="release" pubdate="20140811004354" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://dispatch.databinder.net/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="8">
+				<license name="LGPL v3" url="http://www.gnu.org/licenses/lgpl.txt"/>
+				<metadata-artifact status="no" details="" size="2827" time="0" location="/Users/lebbah/.ivy2/cache/net.databinder.dispatch/dispatch-core_2.10/ivy-0.11.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/net/databinder/dispatch/dispatch-core_2.10/0.11.2/dispatch-core_2.10-0.11.2.pom"/>
+				<caller organisation="net.databinder.dispatch" name="dispatch-json4s-native_2.10" conf="compile, runtime" rev="0.11.2" rev-constraint-default="0.11.2" rev-constraint-dynamic="0.11.2" callerrev="0.11.2"/>
+				<artifacts>
+					<artifact name="dispatch-core_2.10" type="jar" ext="jar" status="no" details="" size="273837" time="0" location="/Users/lebbah/.ivy2/cache/net.databinder.dispatch/dispatch-core_2.10/jars/dispatch-core_2.10-0.11.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/net/databinder/dispatch/dispatch-core_2.10/0.11.2/dispatch-core_2.10-0.11.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.ning" name="async-http-client">
+			<revision name="1.8.10" status="release" pubdate="20140611143655" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/AsyncHttpClient/async-http-client" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="9">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="6803" time="0" location="/Users/lebbah/.ivy2/cache/com.ning/async-http-client/ivy-1.8.10.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/com/ning/async-http-client/1.8.10/async-http-client-1.8.10.pom"/>
+				<caller organisation="net.databinder.dispatch" name="dispatch-core_2.10" conf="compile, runtime" rev="1.8.10" rev-constraint-default="1.8.10" rev-constraint-dynamic="1.8.10" callerrev="0.11.2"/>
+				<artifacts>
+					<artifact name="async-http-client" type="jar" ext="jar" status="no" details="" size="528971" time="0" location="/Users/lebbah/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.8.10.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/com/ning/async-http-client/1.8.10/async-http-client-1.8.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.netty" name="netty">
+			<revision name="3.9.2.Final" status="release" pubdate="20140611112254" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://netty.io/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="10">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="6971" time="0" location="/Users/lebbah/.ivy2/cache/io.netty/netty/ivy-3.9.2.Final.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/io/netty/netty/3.9.2.Final/netty-3.9.2.Final.pom"/>
+				<caller organisation="com.ning" name="async-http-client" conf="compile, runtime" rev="3.9.2.Final" rev-constraint-default="3.9.2.Final" rev-constraint-dynamic="3.9.2.Final" callerrev="1.8.10"/>
+				<artifacts>
+					<artifact name="netty" type="bundle" ext="jar" status="no" details="" size="1303237" time="0" location="/Users/lebbah/.ivy2/cache/io.netty/netty/bundles/netty-3.9.2.Final.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/io/netty/netty/3.9.2.Final/netty-3.9.2.Final.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.10.6" status="release" pubdate="20150918053528" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.6/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master, master(compile)" position="6">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2656" time="0" location="/Users/lebbah/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.6.xml" searched="false" origin-is-local="false" origin-location="file:/Users/lebbah/bin/activator-dist-1.3.10/repository/org.scala-lang/scala-library/2.10.6/ivys/ivy.xml"/>
+				<caller organisation="org.scalaz" name="scalaz-core_2.10" conf="default, compile, runtime, master" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.4" callerrev="7.1.0"/>
+				<caller organisation="org.scalaz" name="scalaz-effect_2.10" conf="default, compile, runtime, master" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.4" callerrev="7.1.0"/>
+				<caller organisation="org.json4s" name="json4s-ast_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="3.2.10"/>
+				<caller organisation="net.databinder.dispatch" name="dispatch-core_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.11.2"/>
+				<caller organisation="org.json4s" name="json4s-native_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="3.2.10"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="2.10.0"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="2.10.0"/>
+				<caller organisation="org.foundweekends" name="bintry_2.10" conf="default, compile, runtime, master" rev="2.10.6" rev-constraint-default="2.10.6" rev-constraint-dynamic="2.10.6" callerrev="0.5.1"/>
+				<caller organisation="net.databinder.dispatch" name="dispatch-json4s-native_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.11.2"/>
+				<caller organisation="org.json4s" name="json4s-core_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="3.2.10"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="7132001" time="0" location="/Users/lebbah/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.6.jar">
+						<origin-location is-local="false" location="file:/Users/lebbah/bin/activator-dist-1.3.10/repository/org.scala-lang/scala-library/2.10.6/jars/scala-library.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.10.5" status="release" pubdate="20150227015430" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.5/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
+				<metadata-artifact status="no" details="" size="2669" time="0" location="/Users/lebbah/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.10.5/scala-library-2.10.5.pom"/>
+				<evicted-by rev="2.10.6"/>
+				<caller organisation="org.scalaz" name="scalaz-core_2.10" conf="default, compile, runtime, master" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.4" callerrev="7.1.0"/>
+				<caller organisation="org.scalaz" name="scalaz-effect_2.10" conf="default, compile, runtime, master" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.4" callerrev="7.1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.10.0" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.10.6"/>
+				<caller organisation="org.json4s" name="json4s-ast_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="3.2.10"/>
+				<caller organisation="org.json4s" name="json4s-native_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="3.2.10"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="2.10.0"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="2.10.0"/>
+				<caller organisation="org.json4s" name="json4s-core_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="3.2.10"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="2.10.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="master(*), compile, runtime(*), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.10.6"/>
+				<caller organisation="net.databinder.dispatch" name="dispatch-core_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.11.2"/>
+				<caller organisation="net.databinder.dispatch" name="dispatch-json4s-native_2.10" conf="compile, runtime" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="0.11.2"/>
+				<caller organisation="org.json4s" name="json4s-core_2.10" conf="compile, runtime" rev="2.10.0" rev-constraint-default="2.10.0" rev-constraint-dynamic="2.10.0" callerrev="3.2.10"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="default" name="global-plugins">
+			<revision name="0.0" status="integration" pubdate="20180329214552" resolver="inter-project" artresolver="inter-project" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="0">
+				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
+				<caller organisation="default" name="mtm-build" conf="compile, runtime-internal, runtime, optional" rev="0.0" rev-constraint-default="0.0" rev-constraint-dynamic="0.0" callerrev="0.1-SNAPSHOT" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.sbteclipse" name="sbteclipse-plugin">
+			<revision name="4.0.0" status="release" pubdate="20150622145920" resolver="sbt-chain" artresolver="sbt-chain" extra-scalaVersion="2.10" extra-sbtVersion="0.13" downloaded="false" searched="false" default="false" conf="compile, default(compile)" position="1">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="1932" time="0" location="/Users/lebbah/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbteclipse/sbteclipse-plugin/ivy-4.0.0.xml" searched="false" origin-is-local="false" origin-location="http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/4.0.0/ivys/ivy.xml"/>
+				<caller organisation="default" name="global-plugins" conf="compile" rev="4.0.0" rev-constraint-default="4.0.0" rev-constraint-dynamic="4.0.0" callerrev="0.0" extra-scalaVersion="2.10" extra-sbtVersion="0.13"/>
+				<artifacts>
+					<artifact name="sbteclipse-plugin" type="jar" ext="jar" status="no" details="" size="349672" time="0" location="/Users/lebbah/.ivy2/cache/scala_2.10/sbt_0.13/com.typesafe.sbteclipse/sbteclipse-plugin/jars/sbteclipse-plugin-4.0.0.jar">
+						<origin-location is-local="false" location="http://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbteclipse/sbteclipse-plugin/scala_2.10/sbt_0.13/4.0.0/jars/sbteclipse-plugin.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalaz" name="scalaz-effect_2.10">
+			<revision name="7.1.0" status="release" pubdate="20140801121342" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalaz.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="3">
+				<license name="BSD-style" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2786" time="0" location="/Users/lebbah/.ivy2/cache/org.scalaz/scalaz-effect_2.10/ivy-7.1.0.xml" searched="false" origin-is-local="false" origin-location="file:/Users/lebbah/bin/activator-dist-1.3.10/repository/org.scalaz/scalaz-effect_2.10/7.1.0/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.sbteclipse" name="sbteclipse-plugin" conf="compile" rev="7.1.0" rev-constraint-default="7.1.0" rev-constraint-dynamic="7.1.0" callerrev="4.0.0"/>
+				<artifacts>
+					<artifact name="scalaz-effect_2.10" type="bundle" ext="jar" status="no" details="" size="428107" time="0" location="/Users/lebbah/.ivy2/cache/org.scalaz/scalaz-effect_2.10/bundles/scalaz-effect_2.10-7.1.0.jar">
+						<origin-location is-local="false" location="file:/Users/lebbah/bin/activator-dist-1.3.10/repository/org.scalaz/scalaz-effect_2.10/7.1.0/bundles/scalaz-effect_2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalaz" name="scalaz-core_2.10">
+			<revision name="7.1.0" status="release" pubdate="20140801121416" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalaz.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="2">
+				<license name="BSD-style" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="2635" time="0" location="/Users/lebbah/.ivy2/cache/org.scalaz/scalaz-core_2.10/ivy-7.1.0.xml" searched="false" origin-is-local="false" origin-location="file:/Users/lebbah/bin/activator-dist-1.3.10/repository/org.scalaz/scalaz-core_2.10/7.1.0/ivys/ivy.xml"/>
+				<caller organisation="com.typesafe.sbteclipse" name="sbteclipse-plugin" conf="compile" rev="7.1.0" rev-constraint-default="7.1.0" rev-constraint-dynamic="7.1.0" callerrev="4.0.0"/>
+				<caller organisation="org.scalaz" name="scalaz-effect_2.10" conf="default, compile, runtime, master" rev="7.1.0" rev-constraint-default="7.1.0" rev-constraint-dynamic="7.1.0" callerrev="7.1.0"/>
+				<artifacts>
+					<artifact name="scalaz-core_2.10" type="bundle" ext="jar" status="no" details="" size="9398321" time="0" location="/Users/lebbah/.ivy2/cache/org.scalaz/scalaz-core_2.10/bundles/scalaz-core_2.10-7.1.0.jar">
+						<origin-location is-local="false" location="file:/Users/lebbah/bin/activator-dist-1.3.10/repository/org.scalaz/scalaz-core_2.10/7.1.0/bundles/scalaz-core_2.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

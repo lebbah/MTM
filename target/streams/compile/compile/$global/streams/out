@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/home/KyBe/Works/Projects/Contribute To Open Source/MTM/MTM/src/main/scala/org/lipn/mtm/mtm/RunMTM.scala:108:23: not found: value Duration[0m
+[0m[[0m[31merror[0m] [0m[0m    val somDuration = Duration(System.currentTimeMillis() - startLearningTime, MILLISECONDS)[0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/KyBe/Works/Projects/Contribute To Open Source/MTM/MTM/src/main/scala/org/lipn/mtm/mtm/RunMTM.scala:108:80: not found: value MILLISECONDS[0m
+[0m[[0m[31merror[0m] [0m[0m    val somDuration = Duration(System.currentTimeMillis() - startLearningTime, MILLISECONDS)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
